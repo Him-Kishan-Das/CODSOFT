@@ -13,6 +13,20 @@
     src: url(./src/css/font/Nanum_Gothic_Coding/NanumGothicCoding-Bold.ttf);
 }
 
+@font-face {
+    font-family: "Great Vibes";
+    src: url(./src/css/font/Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PT_Sans_Narrow";
+    src: url(./src/css/font/PT_Sans_Narrow/);
+}
+
+body{
+    font-family: "PT_Sans_Narrow";
+}
+
 #welcomeScreen{
     position: fixed;
     width: 100%;
@@ -89,7 +103,50 @@
 
 #container.visible{
     display: block;
-    font-family: "Grey Qo";
-    text-align: center;
-    font-size: 40px;
 }
+
+
+/* Navbar Styling starts here  */
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+#signature-logo{
+    font-family: "Grey Qo";
+    font-size: 40px;
+    color: rgb(46, 1, 58);
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+#nav-links{
+    display: flex;
+    flex-direction: row;
+    font-family: "PT_Sans_Narrow";
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link-items{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+
+.nav-link-items > a{
+    text-decoration: none;
+}
+
+.nav-link-items > a:hover{
+    cursor: pointer;
+    color: rgb(166, 0, 212);
+    text-decoration: underline;
+}
+
+/* Navbar Styling ends here  */
