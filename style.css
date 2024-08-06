@@ -112,13 +112,12 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 14px 20px;
-    background-color: rgb(245, 245, 245);
+    padding: 14px 80px;
 }
 
 #signature-logo{
     font-family: "Grey Qo";
-    font-size: 40px;
+    font-size: 55px;
     color: rgb(46, 1, 58);
     font-weight: 500;
     padding-left: 20px;
@@ -135,18 +134,20 @@ body{
 
 .nav-link-items{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 0px 15px;
+    font-size: 23px;
+    padding: 15px 20px;
 }
 
 .nav-link-items > a{
-    text-decoration: none;
+    text-decoration: none;  
+    color: black;
 }
 
-.nav-link-items > a:hover{
+.nav-link-items:hover{
     cursor: pointer;
-    color: rgb(166, 0, 212);
-    text-decoration: underline;
+    background-color: rgb(147, 147, 147);
 }
+
+
 
 /* Navbar Styling ends here  */
