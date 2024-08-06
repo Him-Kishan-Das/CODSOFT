@@ -47,6 +47,10 @@
     align-items: center;
     padding: 23px 8px;
 }
+@keyframes slide-in {
+    0% { transform: translateX(-100%); opacity: 0; }
+    /* 100% { transform: translateX(0); opacity: 1; } */
+  }
 
 #logo{
     display: flex;
@@ -63,6 +67,7 @@
     position: relative;  
     margin-top: 35px;
     transform: scale(1.2, 1.68);
+    animation: slide-in 2s ease forwards;
 }
 
 .logo-alphabet:nth-child(1) { /* "H" */
