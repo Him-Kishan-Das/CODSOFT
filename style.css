@@ -3,7 +3,10 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+@font-face {
+    src: url(./src/css/font/GreyQo-Regular.ttf);
+    font-family: "Grey Qo";
+}
 
 #welcomeScreen{
     position: fixed;
@@ -33,4 +36,7 @@
 
 #container.visible{
     display: block;
+    font-family: "Grey Qo";
+    text-align: center;
+    font-size: 40px;
 }
