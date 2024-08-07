@@ -19,8 +19,13 @@
 }
 
 @font-face {
-    font-family: "PT_Sans_Narrow";
     src: url(./src/css/font/PT_Sans_Narrow/);
+    font-family: "PT_Sans_Narrow";
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(./src/css/font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 body{
@@ -149,5 +154,40 @@ body{
 }
 
 
-
 /* Navbar Styling ends here  */
+
+/* About Section styling starts here  */
+
+#About-Section{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0px auto;
+    font-family: "Open Sans";
+}
+
+.about{
+    padding: 100px 30px;
+    width: 50%;
+}
+
+#about-name{
+    font-size: 60px;
+
+}
+
+#about-details{
+    padding: 20px 0px;
+    font-size: 28px;
+    width: 490px;
+}
+
+#Him-Kishan-Das{
+    width: 440px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+
+
+/* About Section styling ends here  */
