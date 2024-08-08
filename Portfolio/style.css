@@ -154,6 +154,21 @@ body{
 }
 
 
+/* .burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #141414;
+    margin: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+} */
+
+
+
 /* Navbar Styling ends here  */
 
 /* About Section styling starts here  */
@@ -231,4 +246,133 @@ body{
 
 
 
+/* media query styling starts here */
+
+/* @media screen and (max-width: 768px){
+
+    body{
+        width: 100%;
+    }
+
+    #navBar{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 0px;
+        width: 150px;
+    }
+
+    #About-Section{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #Him-Kishan-Das{
+        width: 330px;
+    }
+
+
+    #nav-links {
+        display: none;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        background-color: #333;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    #nav-links.active {
+        display: block;
+    }
+
+    #nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+        float: right;
+        margin-top: 15px;
+    }
+
+    .burger.active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.active .line2 {
+        opacity: 0;
+    }
+
+    .burger.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+
+    #signature-logo > img{
+        width: 150px;
+        margin-right: 5px;
+    }
+} */
+
+/* media query styling ends here */
+
+
 /* About Section styling ends here  */
+
+
+/* Skills Section styling starts here */
+
+#skills > h3{
+    font-size: 38px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+#fullstack{
+    display: flex;
+    flex-direction: row-reverse ;
+}
+
+.fullstack-vector-image{
+    width: 800px;
+}
+
+
+.fullstack-details{
+    margin: 30px 40px 30px 80px;
+    padding: 20px;
+}
+
+.fullstack-details > h3{
+    font-size: 40px;
+}
+
+.programming-icons{
+    padding: 27px 0px;
+}
+
+.programming-language-logo{
+    width: 50px;
+    padding: 7PX;
+}
+
+.thunder-icon{
+    width: 18px;
+}
+
+.key-skill-points{
+    list-style: none;
+    font-size: 23px;
+    padding: 14px;
+}
+
+
+
+
+
+
+/* Skills Section styling ends here */
