@@ -397,7 +397,7 @@ body{
 
 .project-details > h3{
     font-size: 30px;
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 .project-description{
@@ -405,16 +405,60 @@ body{
     width: 80%;
 }
 
+.project-technologies{
+    padding: 0 50px;
+    font-size: 18px;
+}
+
+
+.project-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 30px;
+    margin: 20px 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.project-link > img{
+    width: 30px;
+    padding-left: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.project-link:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.project-link:hover img {
+    filter: brightness(0) invert(0);
+}
+
 .project-image{
     width: 50%;
     padding: 50px 0;
 }
 
-.project-image > img {
+.project-image > img:nth-child(1){
+    width: 200px;
+    border: none;
+    margin: 0 60px;
+}
+
+.project-image > img:nth-child(2) {
     width: 80%;
     border: 1px solid black;
-    margin: 70px 60px;
+    margin: 5px 60px;
 }
+
+
+
+
 
 
 /* Project Section styling ends here */
