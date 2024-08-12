@@ -1,13 +1,28 @@
-let clr = () =>{
-    document.getElementById("screen").value = ""
+function display(value) {
+    var screen = document.getElementById('screen');
+    screen.value += value;
 }
 
-let display = (val) => {
-    document.getElementById("screen").value += val + " ";
+function clr() {
+    var screen = document.getElementById('screen');
+    screen.value = '';
 }
 
-function solve() { 
-    let x = document.getElementById("screen").value 
-    let y = math.evaluate(x) 
-    document.getElementById("screen").value = y 
-} 
+function deleteLast() {
+    var screen = document.getElementById('screen');
+    screen.value = screen.value.slice(0, -1);
+}
+
+function solve() {
+    var screen = document.getElementById('screen');
+    try {
+        var expression = screen.value.replace(/x/g, '*');
+        expression = expression.replace(/&#247;/g, '/');
+        var result = eval(expression);
+        screen.value = result;
+    } catch (e) {
+        screen.value = 'Error';
+    }
+}
+
+document.getElementById('delete').addEventListener('click', deleteLast);
