@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color: aqua;
+    /* background-color: aqua; */
+    background: radial-gradient(circle, rgb(49, 245, 255), rgb(49, 156, 222), rgb(185, 24, 229));
 }
 
 .container{
