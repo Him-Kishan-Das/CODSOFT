@@ -1,6 +1,6 @@
 function display(value) {
     var screen = document.getElementById('screen');
-    screen.value += value;
+        screen.value += value;
 }
 
 function clr() {
@@ -16,8 +16,7 @@ function deleteLast() {
 function solve() {
     var screen = document.getElementById('screen');
     try {
-        var expression = screen.value.replace(/x/g, '*');
-        expression = expression.replace(/&#247;/g, '/');
+        var expression = screen.value.replace(/x/g, '*').replace(/÷/g, '/');
         var result = eval(expression);
         screen.value = result;
     } catch (e) {
