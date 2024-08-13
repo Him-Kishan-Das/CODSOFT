@@ -30,6 +30,7 @@
 
 body{
     font-family: "PT_Sans_Narrow";
+    background: rgb(230, 222, 238);
 }
 
 #welcomeScreen{
@@ -233,6 +234,7 @@ body{
     border-radius: 12px;
     width: 87%;
     font-size: 25px;
+    background-color: white;
     font-family: "Great Vibes";
     padding: 16px;
     box-shadow: 3px 9px 8px 1px rgba(0,0,0,0.88);
@@ -329,7 +331,7 @@ body{
 #skills > h3{
     font-size: 38px;
     text-align: center;
-    margin-top: 18px;
+    margin: 30px 0;
 }
 
 #fullstack{
@@ -338,7 +340,8 @@ body{
 }
 
 .fullstack-vector-image{
-    width: 800px;
+    width: 740px;
+    margin-right: 79px;
 }
 
 
@@ -476,6 +479,46 @@ body{
 
 
 /* Project Section styling ends here */
+
+
+
+
+/* Resume styling starts here  */
+
+#resume {
+    margin: 10px auto;
+    /* width: 40%; Adjust the width as desired */
+}
+
+#resume > h3 {
+    text-align: center;
+    font-size: 50px; /* Adjust the font size */
+    margin-bottom: 40px;
+}
+.resume-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-left{
+    width: 36%;
+}
+
+#resume > iframe {
+    border: 2px solid black;
+    width: 100%; /* Make sure the iframe fills the container */
+}
+
+
+.resume-container-right{
+    margin-left: 70px;
+    font-size: 26px;
+}
+
+/* Resume styling ends here  */
 
 
 
