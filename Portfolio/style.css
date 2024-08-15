@@ -29,10 +29,8 @@
 }
 
 body{
-    font-family: "PT_Sans_Narrow";
+    font-family: "Open Sans";
     background: rgb(230, 222, 238);
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 }
 
 #welcomeScreen{
@@ -384,12 +382,14 @@ body{
 
 #projects{
     margin: 50px 0;
-    font-family: "PT_Sans_Narrow";
+    /* font-family: "PT_Sans_Narrow";*/
+    font-family: "Open Sans";
 }
 
 #projects > h3{
     text-align: center;
     font-size: 50px;
+    
 }
 
 #projects > h2{
@@ -410,6 +410,7 @@ body{
 .project-details > h3{
     font-size: 40px;
     padding: 25px 0;
+    font-family: "PT_Sans_Narrow";
 }
 
 .project-description{
@@ -538,6 +539,71 @@ body{
 
 /* Resume styling ends here  */
 
+
+
+
+/* contact me styling starts here  */
+
+#contactMe{
+    margin: 70px 20px;
+}
+
+/* #contactMe > h3{
+    text-align: center;
+    font-size: 40px;
+} */
+
+.contact-details{
+    display: flex;
+    flex-direction: row;
+    margin: 130px 80px;
+    justify-content: space-around;
+}
+
+.contact-detials-img{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.contact-detials-img > img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info{
+    width: 40%;
+}
+.contact-info > h3{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contact-info > p{
+    font-size: 22px;
+}
+
+.contact-buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.contact-social-btn{
+    margin: 8px;
+}
+
+.contact-social-btn:hover{
+    filter: brightness(70%);
+}
+
+
+.contact-social-btn > img{
+    width: 40px;
+}
+
+/* contact me styling ends here  */
 
 
 
