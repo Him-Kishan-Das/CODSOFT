@@ -30,7 +30,7 @@
 
 body{
     font-family: "Open Sans";
-    background: rgb(230, 222, 238);
+    background: rgb(242, 235, 255);
 }
 
 #welcomeScreen{
@@ -176,7 +176,7 @@ body{
 
 #About-Section{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 90%;
     margin: 0px auto;
     font-family: "Open Sans";
@@ -248,82 +248,157 @@ body{
 
 
 
-/* media query styling starts here */
-
-/* @media screen and (max-width: 768px){
-
-    body{
-        width: 100%;
-    }
-
-    #navBar{
-        display: flex;
-        flex-direction: row;
-        padding: 5px 0px;
-        width: 150px;
-    }
-
-    #About-Section{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    #Him-Kishan-Das{
-        width: 330px;
-    }
-
-
-    #nav-links {
-        display: none;
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        background-color: #333;
-        top: 60px;
-        left: 0;
-        z-index: 1;
-    }
-
-    #nav-links.active {
-        display: block;
-    }
-
-    #nav-links li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .burger {
-        display: block;
-        float: right;
-        margin-top: 15px;
-    }
-
-    .burger.active .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .burger.active .line2 {
-        opacity: 0;
-    }
-
-    .burger.active .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-
-    #signature-logo > img{
-        width: 150px;
-        margin-right: 5px;
-    }
-} */
-
-/* media query styling ends here */
-
-
 /* About Section styling ends here  */
+
+
+/* Education styling starts here  */
+
+#Education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Education > h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.Education-Header-Section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-header-right{
+    font-size: 20px;
+    margin: 0px 30px;
+}
+
+.education-header-right > a > button{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #9728c7;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+}
+
+.education-header-right > a > button:hover{
+    cursor: pointer;
+    background-color: #9f4dc3;
+}
+
+.education-header-left > img{
+    width: 500px;
+}
+
+.Education-Degree{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin: 10px 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Education-Degree > img{
+    width: 150px;
+    height: 220px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.Education-Degree-Container{
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 75%;
+}
+
+.Degree-container-Header{
+    background-color: rgb(206, 151, 254);
+    border-radius: 15px 15px 0 0;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.degree-container-Header-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.key-points-degree{
+    font-size: 20px;
+    padding: 10px 30px;
+    list-style: none;
+}
+
+#certificates{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px 0;
+    grid-auto-flow: row dense;
+}
+
+#certificates > a{
+    text-decoration: none;
+    color: black;
+}
+
+.certificate-container{
+    width: 350px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 10px;
+    
+    box-shadow: 3px 11px 19px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 11px 19px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 11px 19px -1px rgba(0,0,0,0.75);
+}
+
+.certificate-image{
+    width: 350px;
+    height: 100px;
+    overflow: hidden;
+    border: 0 0 1px solid black;
+}
+
+
+.certificate-image > img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.certificate-details{
+    padding: 20px 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+/* Education styling ends here  */
 
 
 /* Skills Section styling starts here */
@@ -606,4 +681,65 @@ body{
 /* contact me styling ends here  */
 
 
+footer{
+    text-align: center;
+    background-color: rgb(137, 71, 252);
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+}
 
+
+
+
+
+
+
+
+.box {
+    display: flex;
+    width: 100%;
+    height: 8px;
+    margin: 5px 0px 60px 0px;
+  }
+  
+  .box-sm {
+    height: 8px;
+    margin: 0;
+    flex-grow: 1;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* // Growing the width of box, when hover using flex-grow property */
+  .box{
+    width: 80%;
+    margin: 80px auto;
+  }
+  .box-sm:hover {
+    flex-grow: 12;
+  }
+  
+  .red {
+    background-color: #FF5852;
+  }
+  
+  .orange {
+    background-color: #FF9000;
+  }
+  
+  .yellow {
+    background-color: #FFD300;
+  }
+  
+  .green {
+    background-color: #3DCD49;
+  }
+  
+  .blue {
+    background-color: #0089D7;
+  }
+  
+  .purple {
+    background-color: #9E44C4;
+  }
