@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Nanum Gothing Coding";
+    src: url(./src/font/Nanum_Gothic_Coding/NanumGothicCoding-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Pt Sans Narrow";
+    src: url(./src/font/PT_Sans_Narrow/PTSansNarrow-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./src/font/Poppins/Poppins-Black.ttf);
+}
+
+body{
+    font-family: "Pt Sans Narrow";
+}
+
+/* navbar styling starts here  */
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 60px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.logo > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 80px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-links{
+    list-style: none;
+    font-size: 23px;
+    margin: 0 20px;
+}
+
+
+.header-sub-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-sub-section-left > p:nth-child(1){
+    font-size: 20px;
+    color: rgb(113, 43, 226);
+}
+.header-sub-section-left > p:nth-child(2), p:nth-child(3){
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.order-now{
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 6px 20px;
+    font-family: "Pt Sans Narrow";
+    border: none;
+    background-color: rgb(113, 43, 226);
+    color: white;
+    border-radius: 5px;
+}
+
+.order-now:hover{
+    cursor: pointer;
+    background-color: rgb(90, 12, 216);
+}
+
+.header-right-image > img{
+    width: 400px;
+}
+
+.conic-gradient{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff9900;
+    clip-path: ellipse(20% 0, 40%);
+    z-index: -1;
+}
+
+/* navbar styling ends here  */
