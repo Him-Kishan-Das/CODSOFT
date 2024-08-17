@@ -53,7 +53,15 @@ body{
 .nav-links{
     list-style: none;
     font-size: 23px;
-    margin: 0 20px;
+    padding: 5px 12px;
+    border-radius: 10px;
+}
+
+.nav-links:hover{
+    cursor: pointer;
+    background-color: rgb(113, 43, 226);
+    color: white;
+    transition: 800ms;
 }
 
 /* navbar styling ends here  */
@@ -145,6 +153,7 @@ body{
 .dishes{
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-auto-flow: dense;
     align-items: center;
     justify-content: space-around;
     margin: 0 60px;
@@ -159,6 +168,11 @@ body{
     box-shadow: 15px 10px 32px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 15px 10px 32px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 15px 10px 32px 1px rgba(0,0,0,0.75);
+}
+
+.dish:hover{
+    transform: scale(1.05);
+    transition: 1s;
 }
 
 .popular-dish-image{
@@ -210,6 +224,13 @@ body{
     border-radius: 25px;
     border: none;
 
+}
+
+.dish-sub-section > button:hover{
+    background-color: transparent;
+    color: black;
+    border: #ff9900 solid 2px;
+    cursor: pointer;
 }
 
 /* popular dishes styling ends here  */
