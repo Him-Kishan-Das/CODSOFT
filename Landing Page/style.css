@@ -299,7 +299,7 @@ body{
 /* Why choose our foo styling starts here  */
 
 #choose-ourFood{
-    margin: 20px;
+    margin: 50px;
 }
 
 #choose-ourFood > h2{
@@ -311,19 +311,26 @@ body{
 .ourFood{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 20px;
 }
 
 .ourFood-features{
     width: 20%;
-    height: 500px;
+    height: 420px;
     border-radius: 20px;
     overflow: hidden;
+    margin: 20px;
     box-shadow: 15px 10px 32px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 15px 10px 32px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 15px 10px 32px 1px rgba(0,0,0,0.75);
+    background-color: rgb(240, 215, 250);
+}
+
+.ourFood-features:hover{
+    transform: scale(1.04);
+    transition: 1s;
 }
 
 .ourFood-features > img{
@@ -332,9 +339,10 @@ body{
 }
 
 .ourFood-features-image{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .ourFood-features-image > img{
@@ -344,6 +352,8 @@ body{
 
 .ourFood-features-subsection{
     padding: 10px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .ourFood-features-subsection > h4{
@@ -364,7 +374,7 @@ body{
 /* Customers Feedback styling starts here  */
 
 #customers-Feedback{
-    margin: 30px;
+    margin: 50px;
 }
 
 .feedbacks{
