@@ -626,7 +626,7 @@ body{
 
 .contact-details{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: 130px 80px;
     justify-content: space-around;
 }
